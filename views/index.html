@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>URL Shortener</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/milligram.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="column column-50 column-offset-25">
+					<div class="cover">
+						<h2><img src="icon/icon.svg" alt=""> Mini-link</h2>
+						<h6>by chypriote</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column column-offset-20 column-60">
+					<form action="">
+						<div class="input-group">
+							<input type="text" id="url-field" placeholder="Lien à réduire">
+							<button class="btn-shorten">Minify!</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column column-offset-20 column-60" id="bottom-col">
+					<strong>Mini-url :</strong>
+					<div class="result">
+						<div id="link" class="display">
+							test
+						</div>
+						<button class="to-clipboard" data-clipboard-target="#link">Copier</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/minified.js"></script>
+	<script src="scripts/clipboard.min.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>

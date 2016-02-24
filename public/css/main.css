@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,700italic);
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+	background: #f4f5f6;
+}
+.container {padding-top: 15%;}
+.cover {
+	text-align: center;
+	margin-bottom: 15%;
+}
+.cover h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cover img {width: .7em;}
+
+#bottom-col {visibility: hidden;}
+.result {display: flex;}
+.display {
+	flex-grow: 1;
+	padding-left: 1em;
+	border-left: 3px solid #9b4dca;
+	display: flex;
+	align-items: center;
+}
+.to-clipboard {margin: 0;}
+
+/* Input group */
+	.input-group {display: flex;}
+	.input-group input {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.input-group button {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
