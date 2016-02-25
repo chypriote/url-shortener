@@ -1,49 +1,50 @@
 {
-  "name": "url-shortener",
-  "version": "1.0.0",
-  "description": "URL Shortening Service",
-  "main": "app.js",
-  "scripts": {
-    "test": "xo"
-  },
-  "keywords": [
-    "URL",
-    "shortener"
-  ],
-  "author": "ChypRiotE",
-  "license": "MIT",
-  "dependencies": {
-    "clipboard": "^1.5.8",
-    "milligram": "^1.1.0",
-    "minified": "^1.0.1",
-    "normalize.css": "^3.0.3"
-  },
-  "devDependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
-    "xo": "^0.12.1",
-    "mongoose": "^4.4.4"
-  },
-  "xo": {
-    "open": true,
-    "ignores": [
-      "public/scripts/minified.js"
-    ],
-    "rules": {
-      "one-var": [
-        2,
-        "never"
-      ],
-      "block-scoped-var": 0,
-      "spaced-comment": [
-        2,
-        "never"
-      ],
-      "no-mixed-spaces-and-tabs": [
-        2,
-        "smart-tabs"
-      ],
-      "linebreak-style": 0
-    }
-  }
+	"name": "url-shortener",
+	"version": "1.0.0",
+	"description": "URL Shortening Service",
+	"main": "app.js",
+	"scripts": {
+		"test": "xo",
+		"start": "node app.js"
+	},
+	"keywords": [
+		"URL",
+		"shortener"
+	],
+	"author": "ChypRiotE",
+	"license": "MIT",
+	"dependencies": {
+		"clipboard": "^1.5.8",
+		"milligram": "^1.1.0",
+		"minified": "^1.0.1",
+		"normalize.css": "^3.0.3"
+	},
+	"devDependencies": {
+		"body-parser": "^1.15.0",
+		"express": "^4.13.4",
+		"xo": "^0.12.1",
+		"mongoose": "^4.4.4"
+	},
+	"xo": {
+		"open": true,
+		"ignores": [
+			"public/scripts/minified.js"
+		],
+		"rules": {
+			"one-var": [
+				2,
+				"never"
+			],
+			"block-scoped-var": 0,
+			"spaced-comment": [
+				2,
+				"never"
+			],
+			"no-mixed-spaces-and-tabs": [
+				2,
+				"smart-tabs"
+			],
+			"linebreak-style": 0
+		}
+	}
 }
