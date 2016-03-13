@@ -35,6 +35,7 @@
 	.input-group input {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
+		background: white;
 	}
 	.input-group button {
 		border-top-left-radius: 0;
