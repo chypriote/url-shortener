@@ -14,16 +14,16 @@
 	"author": "ChypRiotE",
 	"license": "MIT",
 	"dependencies": {
-		"clipboard": "^1.5.8",
-		"milligram": "^1.1.0",
+		"clipboard": "^1.5.15",
+		"milligram": "^1.2.0",
 		"minified": "^1.0.1",
-		"normalize.css": "^4.1.1"
+		"normalize.css": "^5.0.0"
 	},
 	"devDependencies": {
-		"body-parser": "^1.15.0",
-		"express": "^4.13.4",
-		"xo": "^0.15.1",
-		"mongoose": "^4.4.4"
+		"body-parser": "^1.15.2",
+		"express": "^4.14.0",
+		"xo": "^0.17.1",
+		"mongoose": "^4.7.1"
 	},
 	"xo": {
 		"open": true,
