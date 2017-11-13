@@ -4,6 +4,8 @@ var app = express();
 var config = require('./config');
 var base58 = require('./base58');
 var url = require('./models/url');
+var Hashids = require('hashids');
+var hashids = new Hashids('salty', 6);
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
@@ -25,7 +27,7 @@ app.post('/api/shorten', function (req, res) {
 
 	url.findOne({longUrl: longUrl}, function (err, doc) {
 		if (doc) {
-			shortUrl = config.webhost + base58.encode(doc._id);
+			shortUrl = config.webhost + hashids.encode(doc._id);
 			res.send({shortUrl: shortUrl});
 		} else {
 			var newUrl = url({longUrl: longUrl});
@@ -35,7 +37,7 @@ app.post('/api/shorten', function (req, res) {
 					console.log(err);
 				}
 
-				shortUrl = config.webhost + base58.encode(newUrl._id);
+				shortUrl = config.webhost + hashids.encode(newUrl._id);
 				res.send({shortUrl: shortUrl});
 			});
 		}

@@ -15,6 +15,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"clipboard": "^1.5.15",
+		"hashids": "^1.1.4",
 		"milligram": "^1.2.0",
 		"minified": "^1.0.1",
 		"normalize.css": "^5.0.0"

@@ -14,7 +14,7 @@ var counter = mongoose.model('counter', counterSchema);
 
 urlSchema.pre('save', function (next) {
 	var doc = this;
-	counter.findByIdAndUpdate({_id: 'urlCount'}, {$inc: {seq: 1}}, function (error, counter) {
+	counter.findByIdAndUpdate({_id: 'url_count'}, {$inc: {seq: 1}}, function (error, counter) {
 		if (error) {
 			return next(error);
 		}
