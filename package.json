@@ -24,7 +24,7 @@
 		"body-parser": "^1.15.2",
 		"express": "^4.14.0",
 		"xo": "^0.17.1",
-		"mongoose": "^4.7.1"
+		"mongoose": "^5.7.5"
 	},
 	"xo": {
 		"open": true,
